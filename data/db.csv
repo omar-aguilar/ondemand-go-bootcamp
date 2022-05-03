@@ -1,0 +1,201 @@
+ID,Name,Species,Type,Gender,Image,Url,Created
+1,Rick Sanchez,Human,,Male,https://rickandmortyapi.com/api/character/avatar/1.jpeg,https://rickandmortyapi.com/api/character/1,2017-11-04T18:48:46.250Z
+2,Morty Smith,Human,,Male,https://rickandmortyapi.com/api/character/avatar/2.jpeg,https://rickandmortyapi.com/api/character/2,2017-11-04T18:50:21.651Z
+3,Summer Smith,Human,,Female,https://rickandmortyapi.com/api/character/avatar/3.jpeg,https://rickandmortyapi.com/api/character/3,2017-11-04T19:09:56.428Z
+4,Beth Smith,Human,,Female,https://rickandmortyapi.com/api/character/avatar/4.jpeg,https://rickandmortyapi.com/api/character/4,2017-11-04T19:22:43.665Z
+5,Jerry Smith,Human,,Male,https://rickandmortyapi.com/api/character/avatar/5.jpeg,https://rickandmortyapi.com/api/character/5,2017-11-04T19:26:56.301Z
+6,Abadango Cluster Princess,Alien,,Female,https://rickandmortyapi.com/api/character/avatar/6.jpeg,https://rickandmortyapi.com/api/character/6,2017-11-04T19:50:28.250Z
+7,Abradolf Lincler,Human,Genetic experiment,Male,https://rickandmortyapi.com/api/character/avatar/7.jpeg,https://rickandmortyapi.com/api/character/7,2017-11-04T19:59:20.523Z
+8,Adjudicator Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/8.jpeg,https://rickandmortyapi.com/api/character/8,2017-11-04T20:03:34.737Z
+9,Agency Director,Human,,Male,https://rickandmortyapi.com/api/character/avatar/9.jpeg,https://rickandmortyapi.com/api/character/9,2017-11-04T20:06:54.976Z
+10,Alan Rails,Human,Superhuman (Ghost trains summoner),Male,https://rickandmortyapi.com/api/character/avatar/10.jpeg,https://rickandmortyapi.com/api/character/10,2017-11-04T20:19:09.017Z
+11,Albert Einstein,Human,,Male,https://rickandmortyapi.com/api/character/avatar/11.jpeg,https://rickandmortyapi.com/api/character/11,2017-11-04T20:20:20.965Z
+12,Alexander,Human,,Male,https://rickandmortyapi.com/api/character/avatar/12.jpeg,https://rickandmortyapi.com/api/character/12,2017-11-04T20:32:33.144Z
+13,Alien Googah,Alien,,unknown,https://rickandmortyapi.com/api/character/avatar/13.jpeg,https://rickandmortyapi.com/api/character/13,2017-11-04T20:33:30.779Z
+14,Alien Morty,Alien,,Male,https://rickandmortyapi.com/api/character/avatar/14.jpeg,https://rickandmortyapi.com/api/character/14,2017-11-04T20:51:31.373Z
+15,Alien Rick,Alien,,Male,https://rickandmortyapi.com/api/character/avatar/15.jpeg,https://rickandmortyapi.com/api/character/15,2017-11-04T20:56:13.215Z
+16,Amish Cyborg,Alien,Parasite,Male,https://rickandmortyapi.com/api/character/avatar/16.jpeg,https://rickandmortyapi.com/api/character/16,2017-11-04T21:12:45.235Z
+17,Annie,Human,,Female,https://rickandmortyapi.com/api/character/avatar/17.jpeg,https://rickandmortyapi.com/api/character/17,2017-11-04T22:21:24.481Z
+18,Antenna Morty,Human,Human with antennae,Male,https://rickandmortyapi.com/api/character/avatar/18.jpeg,https://rickandmortyapi.com/api/character/18,2017-11-04T22:25:29.008Z
+19,Antenna Rick,Human,Human with antennae,Male,https://rickandmortyapi.com/api/character/avatar/19.jpeg,https://rickandmortyapi.com/api/character/19,2017-11-04T22:28:13.756Z
+20,Ants in my Eyes Johnson,Human,Human with ants in his eyes,Male,https://rickandmortyapi.com/api/character/avatar/20.jpeg,https://rickandmortyapi.com/api/character/20,2017-11-04T22:34:53.659Z
+21,Aqua Morty,Humanoid,Fish-Person,Male,https://rickandmortyapi.com/api/character/avatar/21.jpeg,https://rickandmortyapi.com/api/character/21,2017-11-04T22:39:48.055Z
+22,Aqua Rick,Humanoid,Fish-Person,Male,https://rickandmortyapi.com/api/character/avatar/22.jpeg,https://rickandmortyapi.com/api/character/22,2017-11-04T22:41:07.171Z
+23,Arcade Alien,Alien,,Male,https://rickandmortyapi.com/api/character/avatar/23.jpeg,https://rickandmortyapi.com/api/character/23,2017-11-05T08:43:05.095Z
+24,Armagheadon,Alien,Cromulon,Male,https://rickandmortyapi.com/api/character/avatar/24.jpeg,https://rickandmortyapi.com/api/character/24,2017-11-05T08:48:30.776Z
+25,Armothy,unknown,Self-aware arm,Male,https://rickandmortyapi.com/api/character/avatar/25.jpeg,https://rickandmortyapi.com/api/character/25,2017-11-05T08:54:29.343Z
+26,Arthricia,Alien,Cat-Person,Female,https://rickandmortyapi.com/api/character/avatar/26.jpeg,https://rickandmortyapi.com/api/character/26,2017-11-05T08:56:46.165Z
+27,Artist Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/27.jpeg,https://rickandmortyapi.com/api/character/27,2017-11-05T08:59:07.457Z
+28,Attila Starwar,Human,,Male,https://rickandmortyapi.com/api/character/avatar/28.jpeg,https://rickandmortyapi.com/api/character/28,2017-11-05T09:02:16.595Z
+29,Baby Legs,Human,Human with baby legs,Male,https://rickandmortyapi.com/api/character/avatar/29.jpeg,https://rickandmortyapi.com/api/character/29,2017-11-05T09:06:19.644Z
+30,Baby Poopybutthole,Poopybutthole,,Male,https://rickandmortyapi.com/api/character/avatar/30.jpeg,https://rickandmortyapi.com/api/character/30,2017-11-05T09:13:16.483Z
+31,Baby Wizard,Alien,Parasite,Male,https://rickandmortyapi.com/api/character/avatar/31.jpeg,https://rickandmortyapi.com/api/character/31,2017-11-05T09:15:11.286Z
+32,Bearded Lady,Alien,Parasite,Female,https://rickandmortyapi.com/api/character/avatar/32.jpeg,https://rickandmortyapi.com/api/character/32,2017-11-05T09:18:04.184Z
+33,Beebo,Alien,,Male,https://rickandmortyapi.com/api/character/avatar/33.jpeg,https://rickandmortyapi.com/api/character/33,2017-11-05T09:21:55.595Z
+34,Benjamin,Poopybutthole,,Male,https://rickandmortyapi.com/api/character/avatar/34.jpeg,https://rickandmortyapi.com/api/character/34,2017-11-05T09:24:04.748Z
+35,Bepisian,Alien,Bepisian,unknown,https://rickandmortyapi.com/api/character/avatar/35.jpeg,https://rickandmortyapi.com/api/character/35,2017-11-05T09:27:38.491Z
+36,Beta-Seven,Alien,Hivemind,unknown,https://rickandmortyapi.com/api/character/avatar/36.jpeg,https://rickandmortyapi.com/api/character/36,2017-11-05T09:31:08.952Z
+37,Beth Sanchez,Human,,Female,https://rickandmortyapi.com/api/character/avatar/37.jpeg,https://rickandmortyapi.com/api/character/37,2017-11-05T09:38:22.960Z
+38,Beth Smith,Human,,Female,https://rickandmortyapi.com/api/character/avatar/38.jpeg,https://rickandmortyapi.com/api/character/38,2017-11-05T09:48:44.230Z
+39,Beth Smith,Human,,Female,https://rickandmortyapi.com/api/character/avatar/39.jpeg,https://rickandmortyapi.com/api/character/39,2017-11-05T09:52:31.777Z
+40,Beth's Mytholog,Mythological Creature,Mytholog,Female,https://rickandmortyapi.com/api/character/avatar/40.jpeg,https://rickandmortyapi.com/api/character/40,2017-11-05T10:02:26.701Z
+41,Big Boobed Waitress,Mythological Creature,,Female,https://rickandmortyapi.com/api/character/avatar/41.jpeg,https://rickandmortyapi.com/api/character/41,2017-11-05T10:13:45.960Z
+42,Big Head Morty,Human,Human with giant head,Male,https://rickandmortyapi.com/api/character/avatar/42.jpeg,https://rickandmortyapi.com/api/character/42,2017-11-05T10:15:53.349Z
+43,Big Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/43.jpeg,https://rickandmortyapi.com/api/character/43,2017-11-05T10:17:04.997Z
+44,Body Guard Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/44.jpeg,https://rickandmortyapi.com/api/character/44,2017-11-05T10:18:11.062Z
+45,Bill,Human,,Male,https://rickandmortyapi.com/api/character/avatar/45.jpeg,https://rickandmortyapi.com/api/character/45,2017-11-05T10:22:27.446Z
+46,Bill,Animal,Dog,Male,https://rickandmortyapi.com/api/character/avatar/46.jpeg,https://rickandmortyapi.com/api/character/46,2017-11-05T10:24:38.089Z
+47,Birdperson,Alien,Bird-Person,Male,https://rickandmortyapi.com/api/character/avatar/47.jpeg,https://rickandmortyapi.com/api/character/47,2017-11-05T11:13:36.018Z
+48,Black Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/48.jpeg,https://rickandmortyapi.com/api/character/48,2017-11-05T11:15:26.044Z
+49,Blamph,Alien,,unknown,https://rickandmortyapi.com/api/character/avatar/49.jpeg,https://rickandmortyapi.com/api/character/49,2017-11-05T11:18:26.702Z
+50,Blim Blam,Alien,Korblock,Male,https://rickandmortyapi.com/api/character/avatar/50.jpeg,https://rickandmortyapi.com/api/character/50,2017-11-05T11:21:43.756Z
+51,Blue Diplomat,Alien,,Male,https://rickandmortyapi.com/api/character/avatar/51.jpeg,https://rickandmortyapi.com/api/character/51,2017-11-05T11:24:49.688Z
+52,Blue Footprint Guy,Human,,Male,https://rickandmortyapi.com/api/character/avatar/52.jpeg,https://rickandmortyapi.com/api/character/52,2017-11-05T11:26:42.084Z
+53,Blue Shirt Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/53.jpeg,https://rickandmortyapi.com/api/character/53,2017-11-05T11:28:38.627Z
+54,Bobby Moynihan,Human,,Male,https://rickandmortyapi.com/api/character/avatar/54.jpeg,https://rickandmortyapi.com/api/character/54,2017-11-05T11:31:26.348Z
+55,Boobloosian,Alien,Boobloosian,unknown,https://rickandmortyapi.com/api/character/avatar/55.jpeg,https://rickandmortyapi.com/api/character/55,2017-11-05T11:32:53.847Z
+56,Bootleg Portal Chemist Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/56.jpeg,https://rickandmortyapi.com/api/character/56,2017-11-05T11:34:16.447Z
+57,Borpocian,Alien,Elephant-Person,Male,https://rickandmortyapi.com/api/character/avatar/57.jpeg,https://rickandmortyapi.com/api/character/57,2017-11-05T11:38:29.459Z
+58,Brad,Human,,Male,https://rickandmortyapi.com/api/character/avatar/58.jpeg,https://rickandmortyapi.com/api/character/58,2017-11-05T11:40:02.554Z
+59,Brad Anderson,Human,,Male,https://rickandmortyapi.com/api/character/avatar/59.jpeg,https://rickandmortyapi.com/api/character/59,2017-11-05T11:41:38.964Z
+60,Calypso,Human,Superhuman,Female,https://rickandmortyapi.com/api/character/avatar/60.jpeg,https://rickandmortyapi.com/api/character/60,2017-11-05T11:52:45.852Z
+61,Campaign Manager Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/61.jpeg,https://rickandmortyapi.com/api/character/61,2017-11-05T11:53:44.737Z
+62,Canklanker Thom,Alien,Gromflomite,Male,https://rickandmortyapi.com/api/character/avatar/62.jpeg,https://rickandmortyapi.com/api/character/62,2017-11-05T12:06:23.217Z
+63,Centaur,Mythological Creature,Centaur,Male,https://rickandmortyapi.com/api/character/avatar/63.jpeg,https://rickandmortyapi.com/api/character/63,2017-11-05T12:22:17.848Z
+64,Chris,Alien,Organic gun,unknown,https://rickandmortyapi.com/api/character/avatar/64.jpeg,https://rickandmortyapi.com/api/character/64,2017-11-05T12:25:03.541Z
+65,Chris,Humanoid,Microverse inhabitant,Male,https://rickandmortyapi.com/api/character/avatar/65.jpeg,https://rickandmortyapi.com/api/character/65,2017-11-30T11:02:41.935Z
+66,Coach Feratu (Balik Alistane),Mythological Creature,Vampire,Male,https://rickandmortyapi.com/api/character/avatar/66.jpeg,https://rickandmortyapi.com/api/character/66,2017-11-30T11:10:10.491Z
+67,Collector,Alien,Light bulb-Alien,Male,https://rickandmortyapi.com/api/character/avatar/67.jpeg,https://rickandmortyapi.com/api/character/67,2017-11-30T11:13:46.785Z
+68,Colossus,Human,,Male,https://rickandmortyapi.com/api/character/avatar/68.jpeg,https://rickandmortyapi.com/api/character/68,2017-11-30T11:17:32.733Z
+69,Commander Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/69.jpeg,https://rickandmortyapi.com/api/character/69,2017-11-30T11:28:06.461Z
+70,Concerto,Humanoid,,Male,https://rickandmortyapi.com/api/character/avatar/70.jpeg,https://rickandmortyapi.com/api/character/70,2017-11-30T11:31:41.926Z
+71,Conroy,Robot,,unknown,https://rickandmortyapi.com/api/character/avatar/71.jpeg,https://rickandmortyapi.com/api/character/71,2017-11-30T11:35:50.183Z
+72,Cool Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/72.jpeg,https://rickandmortyapi.com/api/character/72,2017-11-30T11:41:11.542Z
+73,Cop Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/73.jpeg,https://rickandmortyapi.com/api/character/73,2017-11-30T11:43:04.217Z
+74,Cop Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/74.jpeg,https://rickandmortyapi.com/api/character/74,2017-11-30T11:48:18.950Z
+75,Courier Flap,Alien,,unknown,https://rickandmortyapi.com/api/character/avatar/75.jpeg,https://rickandmortyapi.com/api/character/75,2017-11-30T12:12:57.553Z
+76,Cousin Nicky,Alien,Parasite,Male,https://rickandmortyapi.com/api/character/avatar/76.jpeg,https://rickandmortyapi.com/api/character/76,2017-11-30T14:11:52.882Z
+77,Cowboy Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/77.jpeg,https://rickandmortyapi.com/api/character/77,2017-11-30T14:13:17.371Z
+78,Cowboy Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/78.jpeg,https://rickandmortyapi.com/api/character/78,2017-11-30T14:15:18.347Z
+79,Crab Spider,Alien,Animal,unknown,https://rickandmortyapi.com/api/character/avatar/79.jpeg,https://rickandmortyapi.com/api/character/79,2017-11-30T14:18:16.899Z
+80,Creepy Little Girl,Human,,Female,https://rickandmortyapi.com/api/character/avatar/80.jpeg,https://rickandmortyapi.com/api/character/80,2017-11-30T14:20:35.772Z
+81,Crocubot,Animal,Robot-Crocodile hybrid,Male,https://rickandmortyapi.com/api/character/avatar/81.jpeg,https://rickandmortyapi.com/api/character/81,2017-11-30T14:23:41.053Z
+82,Cronenberg Rick,Cronenberg,,Male,https://rickandmortyapi.com/api/character/avatar/82.jpeg,https://rickandmortyapi.com/api/character/82,2017-11-30T14:28:54.596Z
+83,Cronenberg Morty,Cronenberg,,Male,https://rickandmortyapi.com/api/character/avatar/83.jpeg,https://rickandmortyapi.com/api/character/83,2017-11-30T20:02:29.204Z
+84,Cult Leader Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/84.jpeg,https://rickandmortyapi.com/api/character/84,2017-11-30T20:41:48.080Z
+85,Cyclops Morty,Humanoid,,Male,https://rickandmortyapi.com/api/character/avatar/85.jpeg,https://rickandmortyapi.com/api/character/85,2017-11-30T20:49:52.133Z
+86,Cyclops Rick,Humanoid,,Male,https://rickandmortyapi.com/api/character/avatar/86.jpeg,https://rickandmortyapi.com/api/character/86,2017-11-30T20:53:10.382Z
+87,Cynthia,Alien,Zigerion,Female,https://rickandmortyapi.com/api/character/avatar/87.jpeg,https://rickandmortyapi.com/api/character/87,2017-11-30T21:08:32.534Z
+88,Cynthia,Human,,Female,https://rickandmortyapi.com/api/character/avatar/88.jpeg,https://rickandmortyapi.com/api/character/88,2017-11-30T21:16:35.633Z
+89,Dale,Mythological Creature,Giant,Male,https://rickandmortyapi.com/api/character/avatar/89.jpeg,https://rickandmortyapi.com/api/character/89,2017-12-01T10:32:08.340Z
+90,Daron Jefferson,Alien,Cone-nippled alien,Male,https://rickandmortyapi.com/api/character/avatar/90.jpeg,https://rickandmortyapi.com/api/character/90,2017-12-01T10:54:34.736Z
+91,David Letterman,Human,,Male,https://rickandmortyapi.com/api/character/avatar/91.jpeg,https://rickandmortyapi.com/api/character/91,2017-12-01T11:12:25.105Z
+92,Davin,Human,,Male,https://rickandmortyapi.com/api/character/avatar/92.jpeg,https://rickandmortyapi.com/api/character/92,2017-12-01T11:20:51.247Z
+93,Diablo Verde,Mythological Creature,Demon,Male,https://rickandmortyapi.com/api/character/avatar/93.jpeg,https://rickandmortyapi.com/api/character/93,2017-12-01T11:36:16.467Z
+94,Diane Sanchez,Human,,Female,https://rickandmortyapi.com/api/character/avatar/94.jpeg,https://rickandmortyapi.com/api/character/94,2017-12-01T11:49:43.929Z
+95,Dipper and Mabel Mortys,Human,,unknown,https://rickandmortyapi.com/api/character/avatar/95.jpeg,https://rickandmortyapi.com/api/character/95,2017-12-01T11:54:36.670Z
+96,Tuberculosis,Disease,,unknown,https://rickandmortyapi.com/api/character/avatar/96.jpeg,https://rickandmortyapi.com/api/character/96,2017-12-01T11:59:04.796Z
+97,Gonorrhea,Disease,,unknown,https://rickandmortyapi.com/api/character/avatar/97.jpeg,https://rickandmortyapi.com/api/character/97,2017-12-01T12:00:27.028Z
+98,Hepatitis A,Disease,,unknown,https://rickandmortyapi.com/api/character/avatar/98.jpeg,https://rickandmortyapi.com/api/character/98,2017-12-01T12:01:43.742Z
+99,Hepatitis C,Disease,,unknown,https://rickandmortyapi.com/api/character/avatar/99.jpeg,https://rickandmortyapi.com/api/character/99,2017-12-01T12:02:00.935Z
+100,Bubonic Plague,Disease,,unknown,https://rickandmortyapi.com/api/character/avatar/100.jpeg,https://rickandmortyapi.com/api/character/100,2017-12-01T12:02:21.611Z
+101,E. Coli,Disease,,unknown,https://rickandmortyapi.com/api/character/avatar/101.jpeg,https://rickandmortyapi.com/api/character/101,2017-12-01T12:03:31.433Z
+102,Donna Gueterman,Robot,,Female,https://rickandmortyapi.com/api/character/avatar/102.jpeg,https://rickandmortyapi.com/api/character/102,2017-12-01T12:21:21.357Z
+103,Doofus Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/103.jpeg,https://rickandmortyapi.com/api/character/103,2017-12-01T12:29:27.984Z
+104,Doom-Nomitron,Alien,Shapeshifter,unknown,https://rickandmortyapi.com/api/character/avatar/104.jpeg,https://rickandmortyapi.com/api/character/104,2017-12-26T12:34:36.758Z
+105,Dr. Glip-Glop,Alien,,Male,https://rickandmortyapi.com/api/character/avatar/105.jpeg,https://rickandmortyapi.com/api/character/105,2017-12-26T12:39:22.855Z
+106,Dr. Schmidt,Human,Game,Male,https://rickandmortyapi.com/api/character/avatar/106.jpeg,https://rickandmortyapi.com/api/character/106,2017-12-26T12:46:48.805Z
+107,Dr. Wong,Human,,Female,https://rickandmortyapi.com/api/character/avatar/107.jpeg,https://rickandmortyapi.com/api/character/107,2017-12-26T12:55:58.449Z
+108,Dr. Xenon Bloom,Humanoid,Amoeba-Person,Male,https://rickandmortyapi.com/api/character/avatar/108.jpeg,https://rickandmortyapi.com/api/character/108,2017-12-26T13:14:12.157Z
+109,Duck With Muscles,Alien,Parasite,Male,https://rickandmortyapi.com/api/character/avatar/109.jpeg,https://rickandmortyapi.com/api/character/109,2017-12-26T13:17:40.686Z
+110,Eli,Human,,Male,https://rickandmortyapi.com/api/character/avatar/110.jpeg,https://rickandmortyapi.com/api/character/110,2017-12-26T13:37:27.635Z
+111,Eli's Girlfriend,Human,,Female,https://rickandmortyapi.com/api/character/avatar/111.jpeg,https://rickandmortyapi.com/api/character/111,2017-12-26T13:38:47.115Z
+112,Eric McMan,Human,,Male,https://rickandmortyapi.com/api/character/avatar/112.jpeg,https://rickandmortyapi.com/api/character/112,2017-12-26T13:40:06.005Z
+113,Eric Stoltz Mask Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/113.jpeg,https://rickandmortyapi.com/api/character/113,2017-12-26T13:43:29.296Z
+114,Ethan,Human,Cronenberg,Male,https://rickandmortyapi.com/api/character/avatar/114.jpeg,https://rickandmortyapi.com/api/character/114,2017-12-26T16:01:13.904Z
+115,Ethan,Human,,Male,https://rickandmortyapi.com/api/character/avatar/115.jpeg,https://rickandmortyapi.com/api/character/115,2017-12-26T16:01:50.939Z
+116,Evil Beth Clone,Human,Clone,Female,https://rickandmortyapi.com/api/character/avatar/116.jpeg,https://rickandmortyapi.com/api/character/116,2017-12-26T16:10:47.781Z
+117,Evil Jerry Clone,Human,Clone,Male,https://rickandmortyapi.com/api/character/avatar/117.jpeg,https://rickandmortyapi.com/api/character/117,2017-12-26T16:11:15.395Z
+118,Evil Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/118.jpeg,https://rickandmortyapi.com/api/character/118,2017-12-26T16:13:41.103Z
+119,Evil Rick,Humanoid,Robot,Male,https://rickandmortyapi.com/api/character/avatar/119.jpeg,https://rickandmortyapi.com/api/character/119,2017-12-26T16:17:16.472Z
+120,Evil Summer Clone,Human,Clone,Female,https://rickandmortyapi.com/api/character/avatar/120.jpeg,https://rickandmortyapi.com/api/character/120,2017-12-26T16:24:02.059Z
+121,Eyehole Man,Alien,,Male,https://rickandmortyapi.com/api/character/avatar/121.jpeg,https://rickandmortyapi.com/api/character/121,2017-12-26T16:41:58.391Z
+122,Fart,Alien,Interdimensional gaseous being,Male,https://rickandmortyapi.com/api/character/avatar/122.jpeg,https://rickandmortyapi.com/api/character/122,2017-12-26T17:19:40.474Z
+123,Fat Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/123.jpeg,https://rickandmortyapi.com/api/character/123,2017-12-26T17:22:40.315Z
+124,Father Bob,Human,,Male,https://rickandmortyapi.com/api/character/avatar/124.jpeg,https://rickandmortyapi.com/api/character/124,2017-12-26T17:31:29.113Z
+125,Flansian,Alien,Flansian,unknown,https://rickandmortyapi.com/api/character/avatar/125.jpeg,https://rickandmortyapi.com/api/character/125,2017-12-26T17:43:58.410Z
+126,Fleeb,Alien,,unknown,https://rickandmortyapi.com/api/character/avatar/126.jpeg,https://rickandmortyapi.com/api/character/126,2017-12-26T18:45:42.593Z
+127,Frank Palicky,Human,,Male,https://rickandmortyapi.com/api/character/avatar/127.jpeg,https://rickandmortyapi.com/api/character/127,2017-12-26T19:22:48.474Z
+128,Frankenstein's Monster,Alien,Parasite,Male,https://rickandmortyapi.com/api/character/avatar/128.jpeg,https://rickandmortyapi.com/api/character/128,2017-12-26T19:24:56.679Z
+129,Fulgora,Human,,Female,https://rickandmortyapi.com/api/character/avatar/129.jpeg,https://rickandmortyapi.com/api/character/129,2017-12-26T19:30:02.242Z
+130,Galactic Federation President,Alien,Gromflomite,Male,https://rickandmortyapi.com/api/character/avatar/130.jpeg,https://rickandmortyapi.com/api/character/130,2017-12-26T19:49:41.160Z
+131,Gar Gloonch,Alien,Zombodian,Male,https://rickandmortyapi.com/api/character/avatar/131.jpeg,https://rickandmortyapi.com/api/character/131,2017-12-26T19:54:43.476Z
+132,Gar's Mytholog,Mythological Creature,Mytholog,Male,https://rickandmortyapi.com/api/character/avatar/132.jpeg,https://rickandmortyapi.com/api/character/132,2017-12-26T20:02:38.033Z
+133,Garblovian,Alien,Garblovian,Male,https://rickandmortyapi.com/api/character/avatar/133.jpeg,https://rickandmortyapi.com/api/character/133,2017-12-26T20:30:45.943Z
+134,Garmanarnar,Alien,,Male,https://rickandmortyapi.com/api/character/avatar/134.jpeg,https://rickandmortyapi.com/api/character/134,2017-12-26T20:36:54.577Z
+135,Garment District Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/135.jpeg,https://rickandmortyapi.com/api/character/135,2017-12-26T20:51:43.614Z
+136,Gazorpazorpfield,Alien,Gazorpian,Male,https://rickandmortyapi.com/api/character/avatar/136.jpeg,https://rickandmortyapi.com/api/character/136,2017-12-27T17:59:59.058Z
+137,Gene,Human,,Male,https://rickandmortyapi.com/api/character/avatar/137.jpeg,https://rickandmortyapi.com/api/character/137,2017-12-27T18:14:57.885Z
+138,General Nathan,Human,,Male,https://rickandmortyapi.com/api/character/avatar/138.jpeg,https://rickandmortyapi.com/api/character/138,2017-12-27T18:22:18.387Z
+139,General Store Owner,Alien,Cat-Person,Male,https://rickandmortyapi.com/api/character/avatar/139.jpeg,https://rickandmortyapi.com/api/character/139,2017-12-27T18:41:03.124Z
+140,Genital Washer,Human,,Male,https://rickandmortyapi.com/api/character/avatar/140.jpeg,https://rickandmortyapi.com/api/character/140,2017-12-27T18:47:44.566Z
+141,Ghost in a Jar,Alien,Parasite,Genderless,https://rickandmortyapi.com/api/character/avatar/141.jpeg,https://rickandmortyapi.com/api/character/141,2017-12-27T19:14:14.545Z
+142,Gibble Snake,Alien,Animal,unknown,https://rickandmortyapi.com/api/character/avatar/142.jpeg,https://rickandmortyapi.com/api/character/142,2017-12-27T20:16:32.187Z
+143,Glasses Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/143.jpeg,https://rickandmortyapi.com/api/character/143,2017-12-27T20:37:26.134Z
+144,Glenn,Alien,Gromflomite,Male,https://rickandmortyapi.com/api/character/avatar/144.jpeg,https://rickandmortyapi.com/api/character/144,2017-12-29T10:37:48.319Z
+145,Glenn,Human,Eat shiter-Person,Male,https://rickandmortyapi.com/api/character/avatar/145.jpeg,https://rickandmortyapi.com/api/character/145,2017-12-29T11:03:43.118Z
+146,Glexo Slim Slom,Alien,,Male,https://rickandmortyapi.com/api/character/avatar/146.jpeg,https://rickandmortyapi.com/api/character/146,2017-12-29T11:28:29.380Z
+147,Gobo,Alien,,Male,https://rickandmortyapi.com/api/character/avatar/147.jpeg,https://rickandmortyapi.com/api/character/147,2017-12-29T11:38:29.578Z
+148,Goddess Beth,Mythological Creature,Goddess,Female,https://rickandmortyapi.com/api/character/avatar/148.jpeg,https://rickandmortyapi.com/api/character/148,2017-12-29T11:40:25.135Z
+149,Gordon Lunas,Human,,Male,https://rickandmortyapi.com/api/character/avatar/149.jpeg,https://rickandmortyapi.com/api/character/149,2017-12-29T11:44:00.169Z
+150,Cornvelious Daniel,Alien,Gromflomite,Male,https://rickandmortyapi.com/api/character/avatar/150.jpeg,https://rickandmortyapi.com/api/character/150,2017-12-29T12:02:33.550Z
+151,Gwendolyn,Robot,Gazorpian reproduction robot,Female,https://rickandmortyapi.com/api/character/avatar/151.jpeg,https://rickandmortyapi.com/api/character/151,2017-12-29T12:31:50.388Z
+152,Hammerhead Morty,Humanoid,Hammerhead-Person,Male,https://rickandmortyapi.com/api/character/avatar/152.jpeg,https://rickandmortyapi.com/api/character/152,2017-12-29T15:20:16.842Z
+153,Hamster In Butt,Animal,,unknown,https://rickandmortyapi.com/api/character/avatar/153.jpeg,https://rickandmortyapi.com/api/character/153,2017-12-29T15:27:54.281Z
+154,Hamurai,Alien,Parasite,Male,https://rickandmortyapi.com/api/character/avatar/154.jpeg,https://rickandmortyapi.com/api/character/154,2017-12-29T15:32:05.287Z
+155,Harold,Cronenberg,,Male,https://rickandmortyapi.com/api/character/avatar/155.jpeg,https://rickandmortyapi.com/api/character/155,2017-12-29T15:41:18.773Z
+156,Hemorrhage,Human,,Male,https://rickandmortyapi.com/api/character/avatar/156.jpeg,https://rickandmortyapi.com/api/character/156,2017-12-29T15:44:40.083Z
+157,Hole in the Wall Where the Men Can See it All,unknown,Hole,Genderless,https://rickandmortyapi.com/api/character/avatar/157.jpeg,https://rickandmortyapi.com/api/character/157,2017-12-29T15:47:57.352Z
+158,Hookah Alien,Alien,Tuskfish,unknown,https://rickandmortyapi.com/api/character/avatar/158.jpeg,https://rickandmortyapi.com/api/character/158,2017-12-29T15:53:48.952Z
+159,Hunter,Human,Clone,Male,https://rickandmortyapi.com/api/character/avatar/159.jpeg,https://rickandmortyapi.com/api/character/159,2017-12-29T16:03:28.792Z
+160,Hunter's Father,Human,,Male,https://rickandmortyapi.com/api/character/avatar/160.jpeg,https://rickandmortyapi.com/api/character/160,2017-12-29T16:07:04.040Z
+161,Hydrogen-F,Alien,Alphabetrian,Female,https://rickandmortyapi.com/api/character/avatar/161.jpeg,https://rickandmortyapi.com/api/character/161,2017-12-29T16:10:40.290Z
+162,Ice-T,Alien,Alphabetrian,Male,https://rickandmortyapi.com/api/character/avatar/162.jpeg,https://rickandmortyapi.com/api/character/162,2017-12-29T16:42:59.207Z
+163,Ideal Jerry,Mythological Creature,Mytholog,Male,https://rickandmortyapi.com/api/character/avatar/163.jpeg,https://rickandmortyapi.com/api/character/163,2017-12-29T16:46:41.345Z
+164,Insurance Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/164.jpeg,https://rickandmortyapi.com/api/character/164,2017-12-29T17:03:08.645Z
+165,Investigator Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/165.jpeg,https://rickandmortyapi.com/api/character/165,2017-12-29T17:05:15.514Z
+166,Invisi-trooper,Human,,Male,https://rickandmortyapi.com/api/character/avatar/166.jpeg,https://rickandmortyapi.com/api/character/166,2017-12-29T17:06:28.325Z
+167,Izzy,Animal,Cat,unknown,https://rickandmortyapi.com/api/character/avatar/167.jpeg,https://rickandmortyapi.com/api/character/167,2017-12-29T17:07:59.024Z
+168,Jackie,Alien,Gazorpian,Female,https://rickandmortyapi.com/api/character/avatar/168.jpeg,https://rickandmortyapi.com/api/character/168,2017-12-29T17:14:03.430Z
+169,Jacob,Human,,Male,https://rickandmortyapi.com/api/character/avatar/169.jpeg,https://rickandmortyapi.com/api/character/169,2017-12-29T17:20:52.037Z
+170,Jacqueline,Human,,Female,https://rickandmortyapi.com/api/character/avatar/170.jpeg,https://rickandmortyapi.com/api/character/170,2017-12-29T17:22:17.707Z
+171,Jaguar,Human,,Male,https://rickandmortyapi.com/api/character/avatar/171.jpeg,https://rickandmortyapi.com/api/character/171,2017-12-29T17:25:38.138Z
+172,Jamey,Human,,Male,https://rickandmortyapi.com/api/character/avatar/172.jpeg,https://rickandmortyapi.com/api/character/172,2017-12-29T17:30:20.654Z
+173,Jan-Michael Vincent,Human,,Male,https://rickandmortyapi.com/api/character/avatar/173.jpeg,https://rickandmortyapi.com/api/character/173,2017-12-29T17:33:23.972Z
+174,Jerry 5-126,Human,,Male,https://rickandmortyapi.com/api/character/avatar/174.jpeg,https://rickandmortyapi.com/api/character/174,2017-12-29T17:50:19.991Z
+175,Jerry Smith,Human,,Male,https://rickandmortyapi.com/api/character/avatar/175.jpeg,https://rickandmortyapi.com/api/character/175,2017-12-29T18:07:17.610Z
+176,Celebrity Jerry,Human,,Male,https://rickandmortyapi.com/api/character/avatar/176.jpeg,https://rickandmortyapi.com/api/character/176,2017-12-29T18:25:11.930Z
+177,Jerry Smith,Human,,Male,https://rickandmortyapi.com/api/character/avatar/177.jpeg,https://rickandmortyapi.com/api/character/177,2017-12-29T18:28:19.424Z
+178,Jerry's Mytholog,Mythological Creature,Mytholog,Male,https://rickandmortyapi.com/api/character/avatar/178.jpeg,https://rickandmortyapi.com/api/character/178,2017-12-29T18:29:31.279Z
+179,Jessica,Cronenberg,,Female,https://rickandmortyapi.com/api/character/avatar/179.jpeg,https://rickandmortyapi.com/api/character/179,2017-12-29T18:34:37.806Z
+180,Jessica,Human,Time God,Female,https://rickandmortyapi.com/api/character/avatar/180.jpeg,https://rickandmortyapi.com/api/character/180,2017-12-29T18:36:27.225Z
+181,Jessica's Friend,Human,,Female,https://rickandmortyapi.com/api/character/avatar/181.jpeg,https://rickandmortyapi.com/api/character/181,2017-12-29T18:47:23.345Z
+182,Jim,Human,,Male,https://rickandmortyapi.com/api/character/avatar/182.jpeg,https://rickandmortyapi.com/api/character/182,2017-12-29T18:49:48.953Z
+183,Johnny Depp,Human,,Male,https://rickandmortyapi.com/api/character/avatar/183.jpeg,https://rickandmortyapi.com/api/character/183,2017-12-29T18:51:29.693Z
+184,Jon,Alien,Gazorpian,Male,https://rickandmortyapi.com/api/character/avatar/184.jpeg,https://rickandmortyapi.com/api/character/184,2017-12-29T18:54:04.572Z
+185,Joseph Eli Lipkip,Human,,Male,https://rickandmortyapi.com/api/character/avatar/185.jpeg,https://rickandmortyapi.com/api/character/185,2017-12-29T18:56:15.622Z
+186,Joyce Smith,Human,,Female,https://rickandmortyapi.com/api/character/avatar/186.jpeg,https://rickandmortyapi.com/api/character/186,2017-12-29T18:58:34.530Z
+187,Juggling Rick,Human,,Male,https://rickandmortyapi.com/api/character/avatar/187.jpeg,https://rickandmortyapi.com/api/character/187,2017-12-29T18:59:47.440Z
+188,Karen Entity,Alien,Unknown-nippled alien,Female,https://rickandmortyapi.com/api/character/avatar/188.jpeg,https://rickandmortyapi.com/api/character/188,2017-12-29T19:10:16.171Z
+189,Katarina,Human,,Female,https://rickandmortyapi.com/api/character/avatar/189.jpeg,https://rickandmortyapi.com/api/character/189,2017-12-29T19:13:57.070Z
+190,Keara,Alien,Krootabulan,Female,https://rickandmortyapi.com/api/character/avatar/190.jpeg,https://rickandmortyapi.com/api/character/190,2017-12-29T19:26:06.900Z
+191,Kevin,Alien,Zigerion,Male,https://rickandmortyapi.com/api/character/avatar/191.jpeg,https://rickandmortyapi.com/api/character/191,2017-12-29T19:40:07.816Z
+192,King Flippy Nips,Alien,Plutonian,Male,https://rickandmortyapi.com/api/character/avatar/192.jpeg,https://rickandmortyapi.com/api/character/192,2017-12-29T19:49:29.297Z
+193,King Jellybean,Mythological Creature,Jellybean,Male,https://rickandmortyapi.com/api/character/avatar/193.jpeg,https://rickandmortyapi.com/api/character/193,2017-12-29T19:58:44.743Z
+194,Kozbian,Alien,Tentacle alien,unknown,https://rickandmortyapi.com/api/character/avatar/194.jpeg,https://rickandmortyapi.com/api/character/194,2017-12-30T12:13:53.878Z
+195,Kristen Stewart,Human,,Female,https://rickandmortyapi.com/api/character/avatar/195.jpeg,https://rickandmortyapi.com/api/character/195,2017-12-30T12:19:16.042Z
+196,Krombopulos Michael,Alien,Gromflomite,Male,https://rickandmortyapi.com/api/character/avatar/196.jpeg,https://rickandmortyapi.com/api/character/196,2017-12-30T12:28:52.954Z
+197,Kyle,Humanoid,Miniverse inhabitant,Male,https://rickandmortyapi.com/api/character/avatar/197.jpeg,https://rickandmortyapi.com/api/character/197,2017-12-30T12:39:09.025Z
+198,Lady Katana,Humanoid,Cyborg,Female,https://rickandmortyapi.com/api/character/avatar/198.jpeg,https://rickandmortyapi.com/api/character/198,2017-12-30T12:43:37.571Z
+199,Larva Alien,Alien,Larva alien,unknown,https://rickandmortyapi.com/api/character/avatar/199.jpeg,https://rickandmortyapi.com/api/character/199,2017-12-30T12:48:44.677Z
+200,Lawyer Morty,Human,,Male,https://rickandmortyapi.com/api/character/avatar/200.jpeg,https://rickandmortyapi.com/api/character/200,2017-12-30T12:49:52.971Z
