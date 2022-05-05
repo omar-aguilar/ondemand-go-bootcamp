@@ -1,18 +1,18 @@
 package transport
 
 import (
-	"encoding/json"
-	"fmt"
 	"io"
 
 	"github.com/omar-aguilar/ondemand-go-bootcamp/internal/rickandmorty"
 )
 
-func writeFormattedCharacter(channel io.Writer, character rickandmorty.Character, format string) {
+func writeFormattedResponse(channel io.Writer, characterData interface{}, format string) {
 	switch format {
-	case "csv":
-		fmt.Fprintln(channel, character.ToCSVEntry())
+	case rickandmorty.FormatCSV:
+		csvCodec := rickandmorty.NewCSVCharacterCodec()
+		csvCodec.Encode(channel, characterData)
 	default:
-		json.NewEncoder(channel).Encode(character)
+		csvCodec := rickandmorty.NewJSONCharacterCodec()
+		csvCodec.Encode(channel, characterData)
 	}
 }

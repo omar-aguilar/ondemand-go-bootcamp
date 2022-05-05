@@ -14,7 +14,7 @@ func cliLoadCSV(file *os.File) {
 	if isEmptyFile {
 		return
 	}
-	interactor.Load(file)
+	interactor.LoadAndStore(file)
 }
 
 func CLILoadCSVFromFileName(filename string) {
@@ -36,5 +36,5 @@ func CLIGetCharacterById(ID int, format string) {
 		fmt.Fprintln(os.Stderr, err.Error())
 		return
 	}
-	writeFormattedCharacter(os.Stdout, character, format)
+	writeFormattedResponse(os.Stdout, character, format)
 }

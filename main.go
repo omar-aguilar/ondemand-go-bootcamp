@@ -15,8 +15,12 @@ func startRouter() {
 	config := config.GetConfig()
 	router := chi.NewRouter()
 	router.Route("/rickandmorty", func(r chi.Router) {
-		r.Post("/load", ram.HTTPLoadCSV)
-		r.Get("/{id}", ram.HTTPGetCharacterById)
+		r.Route("/external-api/{page}", func(api chi.Router) {
+			api.Get("/load-stored", ram.HTTPGetCharactersStoredFromAPI)
+			api.Get("/store", ram.HTTPGetCharactersFromAPI)
+		})
+		r.Post("/load-csv", ram.HTTPLoadCharactersCSV)
+		r.Get("/character/{id}", ram.HTTPGetCharacterById)
 	})
 	addr := fmt.Sprintf("127.0.0.1:%d", config.Port)
 	http.ListenAndServe(addr, router)

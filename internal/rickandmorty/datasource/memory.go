@@ -6,7 +6,7 @@ import (
 
 type MemoryDS interface {
 	rickandmorty.CharacterGetter
-	UpsertDB(entries []rickandmorty.Character)
+	UpsertDB(entries rickandmorty.CharacterList)
 }
 
 type DB = map[rickandmorty.CharacterID]rickandmorty.Character

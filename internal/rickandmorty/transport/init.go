@@ -10,8 +10,9 @@ var interactor rickandmorty.Interactor
 
 func init() {
 	config := config.GetConfig()
-	csvSource := config.CSVSource
 	memoryStore := datasource.NewMemoryDS()
-	datastore := datasource.NewCSVDS(csvSource, memoryStore)
-	interactor = rickandmorty.NewInteractor(datastore)
+	characterDS := datasource.NewCSVDS(config, memoryStore)
+	apiDS := datasource.NewApiDS()
+	fsDS := datasource.NewFileSystemDS(config)
+	interactor = rickandmorty.NewInteractor(config, characterDS, apiDS, fsDS)
 }
