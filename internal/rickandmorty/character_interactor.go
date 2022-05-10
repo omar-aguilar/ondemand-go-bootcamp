@@ -40,8 +40,7 @@ func (i interactor) LoadAndStore(file io.Reader) error {
 		return err
 	}
 
-	i.storeDS.Write(i.config.DBFile, characterList, FormatCSV)
-	return nil
+	return i.storeDS.Write(i.config.DBFile, characterList, FormatCSV)
 }
 
 func (i interactor) GetById(ID int) (Character, error) {

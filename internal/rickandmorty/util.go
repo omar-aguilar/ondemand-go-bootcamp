@@ -12,6 +12,7 @@ import (
 var (
 	ErrInvalidCodecFormat = errors.New("invalid codec format")
 	ErrEmptyCSV           = errors.New("empty csv")
+	ErrDecodeInput        = errors.New("cannot decode input")
 )
 
 type CharacterCodec interface {
@@ -35,7 +36,11 @@ func (j jsonCodec) Encode(writer io.Writer, data interface{}) error {
 func (j jsonCodec) Decode(reader io.Reader, data interface{}) error {
 	switch data.(type) {
 	case *Character, *CharacterList:
-		return json.NewDecoder(reader).Decode(data)
+		err := json.NewDecoder(reader).Decode(data)
+		if err != nil {
+			return ErrDecodeInput
+		}
+		return nil
 	default:
 		return ErrInvalidCodecFormat
 	}
@@ -100,7 +105,7 @@ func (j csvCodec) Decode(reader io.Reader, data interface{}) error {
 	csvReader := csv.NewReader(reader)
 	csvData, err := csvReader.ReadAll()
 	if err != nil {
-		return err
+		return ErrDecodeInput
 	}
 
 	if len(csvData) == 0 {

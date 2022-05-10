@@ -9,10 +9,18 @@ import (
 	"github.com/omar-aguilar/ondemand-go-bootcamp/internal/rickandmorty"
 )
 
-type api struct{}
+type HTTPClient interface {
+	Do(req *http.Request) (*http.Response, error)
+}
 
-func NewApiDS() rickandmorty.APIGetter {
-	return api{}
+type api struct {
+	httpClient HTTPClient
+}
+
+func NewApiDS(client HTTPClient) rickandmorty.APIGetter {
+	return api{
+		httpClient: client,
+	}
 }
 
 func (a api) GetCharactersByPage(page int) (rickandmorty.CharacterList, error) {
@@ -21,12 +29,11 @@ func (a api) GetCharactersByPage(page int) (rickandmorty.CharacterList, error) {
 	params := url.Values{}
 	params.Add("page", strconv.Itoa(page))
 	requestURL.RawQuery = params.Encode()
-
-	response, err := http.Get(requestURL.String())
+	request, _ := http.NewRequest(http.MethodGet, requestURL.RequestURI(), nil)
+	response, err := a.httpClient.Do(request)
 	if err != nil {
 		return rickandmorty.CharacterList{}, err
 	}
-
 	api := rickandmorty.API{}
 	err = json.NewDecoder(response.Body).Decode(&api)
 	if err != nil {

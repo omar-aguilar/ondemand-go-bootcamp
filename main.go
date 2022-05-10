@@ -44,7 +44,7 @@ func startCLI() {
 
 	switch {
 	case hasStdinInput:
-		ram.CLILoadCSVFromStdin()
+		ram.CLILoadCSVFromStdin(os.Stdin)
 	case hasCsvFilename:
 		ram.CLILoadCSVFromFileName(*csvFilename)
 	case isCharacterRequest:
