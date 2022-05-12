@@ -3,6 +3,8 @@ package rickandmorty
 import (
 	"fmt"
 	"io"
+	"strings"
+	"sync"
 
 	"github.com/omar-aguilar/ondemand-go-bootcamp/internal/config"
 )
@@ -12,6 +14,7 @@ type Interactor interface {
 	GetById(ID int) (Character, error)
 	StoreCharactersByPageFromAPI(page int, storageFormat string) (CharacterList, error)
 	GetCharactersStoredByPageFromAPI(page int, storageFormat string) (CharacterList, error)
+	ReadConcurrent(file io.Reader, params ReadConcurrentParams) (CharacterList, error)
 }
 
 type interactor struct {
@@ -78,4 +81,57 @@ func (i interactor) GetCharactersStoredByPageFromAPI(page int, storageFormat str
 	characterList := CharacterList{}
 	err := i.storeDS.Read(filename, &characterList, storageFormat)
 	return characterList, err
+}
+
+type lineChecker func(number int) bool
+
+func isEven(number int) bool {
+	return number%2 == 0
+}
+
+func isOdd(number int) bool {
+	return !isEven(number)
+}
+
+func worker(id int, output chan<- string, lines <-chan string, params ReadConcurrentParams) {
+	codec := NewCSVCharacterCodec()
+	var isValidLine lineChecker = isEven
+	if params.Type == "odd" {
+		isValidLine = isOdd
+	}
+	for line := range lines {
+		character := Character{}
+		codec.Decode(strings.NewReader(line), &character)
+		if character.ID == 0 || !isValidLine(character.ID) {
+			continue
+		}
+		output <- line
+	}
+}
+
+func (i interactor) ReadConcurrent(file io.Reader, params ReadConcurrentParams) (CharacterList, error) {
+	if err := Validate(params); err != nil {
+		return CharacterList{}, err
+	}
+
+	var wg sync.WaitGroup
+	linesChannel := make(chan string, 1)
+	outputChannel := make(chan string, 1)
+	go i.ds.ReadConcurrent(file, params, linesChannel)
+	wg.Add(2)
+	go func() {
+		defer wg.Done()
+		worker(1, outputChannel, linesChannel, params)
+	}()
+	go func() {
+		defer wg.Done()
+		worker(2, outputChannel, linesChannel, params)
+	}()
+	wg.Wait()
+
+	for consumedLine := range outputChannel {
+		fmt.Println(consumedLine)
+	}
+	fmt.Println("finished")
+	return CharacterList{}, nil
 }

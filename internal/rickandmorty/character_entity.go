@@ -18,3 +18,10 @@ type CharacterList = []Character
 type API struct {
 	Results CharacterList
 }
+
+type ReadConcurrentParams struct {
+	Type            string `validate:"oneof=even odd"`
+	Items           int    `validate:"gt=0"`
+	ItemsPerWorker  int    `validate:"gt=0"`
+	NumberOfWorkers int
+}
