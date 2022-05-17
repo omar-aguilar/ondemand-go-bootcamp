@@ -29,7 +29,7 @@ func (a api) GetCharactersByPage(page int) (rickandmorty.CharacterList, error) {
 	params := url.Values{}
 	params.Add("page", strconv.Itoa(page))
 	requestURL.RawQuery = params.Encode()
-	request, _ := http.NewRequest(http.MethodGet, requestURL.RequestURI(), nil)
+	request, _ := http.NewRequest(http.MethodGet, requestURL.String(), nil)
 	response, err := a.httpClient.Do(request)
 	if err != nil {
 		return rickandmorty.CharacterList{}, err
