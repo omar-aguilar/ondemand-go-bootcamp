@@ -32,7 +32,12 @@ type CharacterStorer interface {
 	Read(filename string, data *CharacterList, storageFormat string) error
 }
 
+type CharacterConcurrentReader interface {
+	ReadConcurrent(file io.Reader, params ReadConcurrentParams, lines chan<- string) error
+}
+
 type CharacterRepository interface {
 	CharacterGetter
 	CharacterLoader
+	CharacterConcurrentReader
 }

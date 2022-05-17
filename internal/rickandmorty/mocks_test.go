@@ -20,6 +20,11 @@ func (c *characterRepositoryMock) Load(file io.Reader) (CharacterList, error) {
 	return args.Get(0).(CharacterList), args.Error(1)
 }
 
+func (c *characterRepositoryMock) ReadConcurrent(file io.Reader, params ReadConcurrentParams, lines chan<- string) error {
+	args := c.Called(file, params, lines)
+	return args.Error(0)
+}
+
 type apiGetterMock struct {
 	mock.Mock
 }

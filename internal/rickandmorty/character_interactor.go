@@ -1,8 +1,11 @@
 package rickandmorty
 
 import (
+	"context"
 	"fmt"
 	"io"
+	"strings"
+	"sync"
 
 	"github.com/omar-aguilar/ondemand-go-bootcamp/internal/config"
 )
@@ -12,6 +15,7 @@ type Interactor interface {
 	GetById(ID int) (Character, error)
 	StoreCharactersByPageFromAPI(page int, storageFormat string) (CharacterList, error)
 	GetCharactersStoredByPageFromAPI(page int, storageFormat string) (CharacterList, error)
+	ReadConcurrent(file io.Reader, params ReadConcurrentParams) (CharacterList, error)
 }
 
 type interactor struct {
@@ -78,4 +82,80 @@ func (i interactor) GetCharactersStoredByPageFromAPI(page int, storageFormat str
 	characterList := CharacterList{}
 	err := i.storeDS.Read(filename, &characterList, storageFormat)
 	return characterList, err
+}
+
+type lineChecker func(number int) bool
+
+func isEven(number int) bool {
+	return number%2 == 0
+}
+
+func isOdd(number int) bool {
+	return !isEven(number)
+}
+
+func worker(ctx context.Context, id int, processed chan<- Character, lines <-chan string, params ReadConcurrentParams) {
+	codec := NewCSVCharacterCodec()
+	count := 0
+	var isValidLine lineChecker = isEven
+	if params.Type == "odd" {
+		isValidLine = isOdd
+	}
+loop:
+	for line := range lines {
+		character := Character{}
+		codec.Decode(strings.NewReader(line), &character)
+		if count == params.ItemsPerWorker {
+			break
+		}
+		if character.ID == 0 || !isValidLine(character.ID) {
+			continue
+		}
+		select {
+		case <-ctx.Done():
+			break loop
+		case processed <- character:
+		}
+		count++
+	}
+}
+
+func consumer(cancel context.CancelFunc, results chan<- CharacterList, processed <-chan Character, params ReadConcurrentParams) {
+	characterList := CharacterList{}
+	for character := range processed {
+		characterList = append(characterList, character)
+		if params.Items > 0 && len(characterList) == params.Items {
+			cancel()
+			break
+		}
+	}
+	results <- characterList
+	close(results)
+}
+
+func (i interactor) ReadConcurrent(file io.Reader, params ReadConcurrentParams) (CharacterList, error) {
+	if err := Validate(params); err != nil {
+		return CharacterList{}, err
+	}
+
+	ctx, cancel := context.WithCancel(context.Background())
+	var wg sync.WaitGroup
+	linesChannel := make(chan string)
+	processedChannel := make(chan Character)
+	resultsChannel := make(chan CharacterList)
+	numOfWorkers := getNumberOfWorkers(params.NumberOfWorkers)
+
+	go i.ds.ReadConcurrent(file, params, linesChannel)
+	for i := 1; i <= numOfWorkers; i++ {
+		wg.Add(1)
+		go func(id int) {
+			defer wg.Done()
+			worker(ctx, id, processedChannel, linesChannel, params)
+		}(i)
+	}
+	go consumer(cancel, resultsChannel, processedChannel, params)
+	wg.Wait()
+	close(processedChannel)
+	list := <-resultsChannel
+	return list, nil
 }

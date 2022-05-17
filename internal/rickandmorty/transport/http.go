@@ -1,19 +1,25 @@
 package transport
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"strconv"
 
 	"github.com/go-chi/chi/v5"
+	"github.com/omar-aguilar/ondemand-go-bootcamp/internal/rickandmorty"
 )
 
 const (
-	formFileCSV        = "csv"
-	paramID            = "id"
-	paramPage          = "page"
-	queryOutputFormat  = "outputFormat"
-	queryStorageFormat = "inputFormat"
+	formFileCSV          = "csv"
+	paramID              = "id"
+	paramPage            = "page"
+	queryOutputFormat    = "outputFormat"
+	queryStorageFormat   = "inputFormat"
+	queryType            = "type"
+	queryItems           = "items"
+	queryItemsPerWorker  = "itemsPerWorker"
+	queryNumberOfWorkers = "numberOfWorkers"
 )
 
 func HTTPLoadCharactersCSV(w http.ResponseWriter, r *http.Request) {
@@ -78,5 +84,38 @@ func HTTPGetCharactersStoredFromAPI(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	w.WriteHeader(http.StatusOK)
+	writeFormattedResponse(w, characterList, outputFormat)
+}
+
+func HTTPReadConcurrent(w http.ResponseWriter, r *http.Request) {
+	file, _, err := r.FormFile(formFileCSV)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+	defer file.Close()
+
+	outputFormat := r.URL.Query().Get(queryOutputFormat)
+	typee := r.URL.Query().Get(queryType)
+	items, _ := strconv.Atoi(r.URL.Query().Get(queryItems))
+	itemsPerWorker, _ := strconv.Atoi(r.URL.Query().Get(queryItemsPerWorker))
+	numberOfWorkers, _ := strconv.Atoi(r.URL.Query().Get(queryNumberOfWorkers))
+
+	params := rickandmorty.ReadConcurrentParams{
+		Type:            typee,
+		Items:           items,
+		ItemsPerWorker:  itemsPerWorker,
+		NumberOfWorkers: numberOfWorkers,
+	}
+	characterList, err := interactor.ReadConcurrent(file, params)
+	if err != nil {
+		if errs := rickandmorty.Translate(err); errs != nil {
+			w.WriteHeader(http.StatusFailedDependency)
+			json.NewEncoder(w).Encode(errs)
+			return
+		}
+		http.Error(w, err.Error(), http.StatusFailedDependency)
+		return
+	}
 	writeFormattedResponse(w, characterList, outputFormat)
 }

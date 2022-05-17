@@ -20,6 +20,7 @@ func startRouter() {
 			api.Get("/store", ram.HTTPGetCharactersFromAPI)
 		})
 		r.Post("/load-csv", ram.HTTPLoadCharactersCSV)
+		r.Post("/read-concurrent-csv", ram.HTTPReadConcurrent)
 		r.Get("/character/{id}", ram.HTTPGetCharacterById)
 	})
 	addr := fmt.Sprintf("127.0.0.1:%d", config.Port)

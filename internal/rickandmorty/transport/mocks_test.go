@@ -30,3 +30,8 @@ func (i *interactorMock) GetCharactersStoredByPageFromAPI(page int, storageForma
 	args := i.Called(page, storageFormat)
 	return args.Get(0).(rickandmorty.CharacterList), args.Error(1)
 }
+
+func (i *interactorMock) ReadConcurrent(file io.Reader, params rickandmorty.ReadConcurrentParams) (rickandmorty.CharacterList, error) {
+	args := i.Called(file, params)
+	return args.Get(0).(rickandmorty.CharacterList), args.Error(1)
+}

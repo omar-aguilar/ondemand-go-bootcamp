@@ -1,6 +1,7 @@
 package datasource
 
 import (
+	"bufio"
 	"errors"
 	"io"
 	"log"
@@ -53,4 +54,14 @@ func (d csvDS) Load(file io.Reader) (rickandmorty.CharacterList, error) {
 	}
 	d.memoryStore.UpsertDB(characterList)
 	return characterList, err
+}
+
+func (d csvDS) ReadConcurrent(file io.Reader, params rickandmorty.ReadConcurrentParams, results chan<- string) error {
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		line := scanner.Text()
+		results <- line
+	}
+	close(results)
+	return nil
 }
