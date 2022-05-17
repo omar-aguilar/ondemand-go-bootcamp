@@ -1,6 +1,8 @@
 package transport
 
 import (
+	"net/http"
+
 	"github.com/omar-aguilar/ondemand-go-bootcamp/internal/config"
 	"github.com/omar-aguilar/ondemand-go-bootcamp/internal/rickandmorty"
 	"github.com/omar-aguilar/ondemand-go-bootcamp/internal/rickandmorty/datasource"
@@ -10,8 +12,9 @@ var interactor rickandmorty.Interactor
 
 func init() {
 	config := config.GetConfig()
-	csvSource := config.CSVSource
 	memoryStore := datasource.NewMemoryDS()
-	datastore := datasource.NewCSVDS(csvSource, memoryStore)
-	interactor = rickandmorty.NewInteractor(datastore)
+	characterDS := datasource.NewCSVDS(config, memoryStore)
+	apiDS := datasource.NewApiDS(http.DefaultClient)
+	fsDS := datasource.NewFileSystemDS(config)
+	interactor = rickandmorty.NewInteractor(config, characterDS, apiDS, fsDS)
 }

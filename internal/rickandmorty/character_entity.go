@@ -1,60 +1,20 @@
 package rickandmorty
 
-import (
-	"strconv"
-	"strings"
-)
-
-type Location struct {
-	Name string
-	Url  string
-}
-
-type Origin struct {
-	Name string
-	Url  string
-}
-
-type EpisodeURL = string
-
 type CharacterID = int
 
 type Character struct {
-	ID       CharacterID
-	Name     string
-	Species  string
-	Type     string
-	Gender   string
-	Image    string
-	Url      string
-	Created  string
-	Origin   Origin       `json:"-"`
-	Location Location     `json:"-"`
-	Episode  []EpisodeURL `json:"-"`
+	ID      CharacterID `json:"id"`
+	Name    string      `json:"name"`
+	Species string      `json:"species"`
+	Type    string      `json:"type"`
+	Gender  string      `json:"gender"`
+	Image   string      `json:"image"`
+	Url     string      `json:"url"`
+	Created string      `json:"created"`
 }
 
-type Info struct {
-	Count int
-	Pages int
-	Next  *string
-	Prev  *string
-}
+type CharacterList = []Character
 
 type API struct {
-	Info    Info
-	Results []Character
-}
-
-func (c Character) ToCSVEntry() string {
-	entry := []string{
-		strconv.Itoa(c.ID),
-		c.Name,
-		c.Species,
-		c.Type,
-		c.Gender,
-		c.Image,
-		c.Url,
-		c.Created,
-	}
-	return strings.Join(entry, ",")
+	Results CharacterList
 }

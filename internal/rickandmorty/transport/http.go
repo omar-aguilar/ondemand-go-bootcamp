@@ -8,14 +8,22 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
-func HTTPLoadCSV(w http.ResponseWriter, r *http.Request) {
-	file, _, err := r.FormFile("csv")
+const (
+	formFileCSV        = "csv"
+	paramID            = "id"
+	paramPage          = "page"
+	queryOutputFormat  = "outputFormat"
+	queryStorageFormat = "inputFormat"
+)
+
+func HTTPLoadCharactersCSV(w http.ResponseWriter, r *http.Request) {
+	file, _, err := r.FormFile(formFileCSV)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
 	defer file.Close()
-	err = interactor.Load(file)
+	err = interactor.LoadAndStore(file)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
@@ -24,8 +32,8 @@ func HTTPLoadCSV(w http.ResponseWriter, r *http.Request) {
 }
 
 func HTTPGetCharacterById(w http.ResponseWriter, r *http.Request) {
-	ID, err := strconv.Atoi(chi.URLParam(r, "id"))
-	format := r.URL.Query().Get("format")
+	ID, err := strconv.Atoi(chi.URLParam(r, paramID))
+	outputFormat := r.URL.Query().Get(queryOutputFormat)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
@@ -36,5 +44,39 @@ func HTTPGetCharacterById(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	w.WriteHeader(http.StatusOK)
-	writeFormattedCharacter(w, character, format)
+	writeFormattedResponse(w, character, outputFormat)
+}
+
+func HTTPGetCharactersFromAPI(w http.ResponseWriter, r *http.Request) {
+	page, err := strconv.Atoi(chi.URLParam(r, paramPage))
+	storageFormat := r.URL.Query().Get(queryStorageFormat)
+	outputFormat := r.URL.Query().Get(queryOutputFormat)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+	characterList, err := interactor.StoreCharactersByPageFromAPI(page, storageFormat)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusFailedDependency)
+		return
+	}
+	w.WriteHeader(http.StatusOK)
+	writeFormattedResponse(w, characterList, outputFormat)
+}
+
+func HTTPGetCharactersStoredFromAPI(w http.ResponseWriter, r *http.Request) {
+	page, err := strconv.Atoi(chi.URLParam(r, paramPage))
+	storageFormat := r.URL.Query().Get(queryStorageFormat)
+	outputFormat := r.URL.Query().Get(queryOutputFormat)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+	characterList, err := interactor.GetCharactersStoredByPageFromAPI(page, storageFormat)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusFailedDependency)
+		return
+	}
+	w.WriteHeader(http.StatusOK)
+	writeFormattedResponse(w, characterList, outputFormat)
 }
