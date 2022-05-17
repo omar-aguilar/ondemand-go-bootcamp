@@ -117,6 +117,5 @@ func HTTPReadConcurrent(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusFailedDependency)
 		return
 	}
-	w.WriteHeader(http.StatusOK)
 	writeFormattedResponse(w, characterList, outputFormat)
 }

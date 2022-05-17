@@ -59,7 +59,8 @@ func (d csvDS) Load(file io.Reader) (rickandmorty.CharacterList, error) {
 func (d csvDS) ReadConcurrent(file io.Reader, params rickandmorty.ReadConcurrentParams, results chan<- string) error {
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		results <- scanner.Text()
+		line := scanner.Text()
+		results <- line
 	}
 	close(results)
 	return nil

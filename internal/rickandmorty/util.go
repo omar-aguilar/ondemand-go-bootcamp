@@ -137,3 +137,11 @@ func (j csvCodec) Decode(reader io.Reader, data interface{}) error {
 	}
 	return nil
 }
+
+func getNumberOfWorkers(numOfWorkers int) int {
+	defaultWorkers := 2
+	if numOfWorkers <= 0 || numOfWorkers >= 4 {
+		return defaultWorkers
+	}
+	return numOfWorkers
+}
